@@ -62,7 +62,6 @@ def check_hash(rel_path_str):
     contents = contents.replace(b"\r\n", b"\n")
     hashed_val = hashlib.md5(contents).hexdigest()
     if hashed_val != starter_file_hashes[rel_path_str]:
-        print(hashed_val)
         return (False, f"{rel_path_str} was changed from starter")
     return (True, f"{rel_path_str} matches starter file")
 

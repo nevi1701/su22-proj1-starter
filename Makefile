@@ -22,6 +22,7 @@ help:
 	@echo make run-unit-tests: Compiles and runs unit tests.
 	@echo make run-custom-tests: Compiles and runs custom tests.
 	@echo make debug-unit-tests: Compiles unit tests and starts the debugger.
+	@echo make debug-custom-tests: Compiles custom tests and starts the debugger.
 	@echo make valgrind-test-free-state: Runs the test_free_state unit test under Valgrind.
 	@echo make run-nonexistent-input-file-test: Checks that your program returns -1 on a nonexistent input file.
 	@echo make run-integration-tests: Compiles and runs integration tests.
