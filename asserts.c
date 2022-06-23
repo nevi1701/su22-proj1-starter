@@ -39,7 +39,7 @@ bool assert_false(char* msg, bool actual) {
 /*
   Returns true if expected is equal to actual
   Otherwise, will return false with this message:
-  "Assertion error: expected (msg) to be (expcted) but got (actual)"
+  "Assertion error: expected (msg) to be (expected) but got (actual)"
 */
 bool assert_equals_char(char* msg, char expected, char actual) {
   if (expected != actual) {
