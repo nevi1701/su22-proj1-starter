@@ -992,7 +992,7 @@ bool test_load_board_1() {
   clear_unit_test_files();
 
   /*
-  Board 1 (default):
+  Board 01-simple (default):
   ####################
   #                  #
   # d>D    *         #
@@ -1012,7 +1012,25 @@ bool test_load_board_1() {
   #                  #
   ####################
   */
-  char* expected = "####################\n#                  #\n# d>D    *         #\n#                  #\n#                  #\n#                  #\n#                  #\n#                  #\n#                  #\n#                  #\n#                  #\n#                  #\n#                  #\n#                  #\n#                  #\n#                  #\n#                  #\n####################\n";
+  char* expected =
+    "####################\n"
+    "#                  #\n"
+    "# d>D    *         #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "#                  #\n"
+    "####################\n";
   return assert_load_equals("tests/01-simple-in.snk", expected);
 }
 
@@ -1020,7 +1038,7 @@ bool test_load_board_2() {
   clear_unit_test_files();
 
   /*
-  Board 2 (small):
+  Board 06-small (small):
   #####
   #   #
   # W #
@@ -1028,7 +1046,13 @@ bool test_load_board_2() {
   # w #
   #####
   */
-  char* expected = "#####\n#   #\n# W #\n# ^ #\n# w #\n#####\n";
+  char* expected =
+    "#####\n"
+    "#   #\n"
+    "# W #\n"
+    "# ^ #\n"
+    "# w #\n"
+    "#####\n";
   return assert_load_equals("tests/06-small-in.snk", expected);
 }
 
@@ -1036,7 +1060,7 @@ bool test_load_board_3() {
   clear_unit_test_files();
 
   /*
-  Board 16 (non square):
+  Board 13-sus (non square):
   ##############
   #            #
   #  ########  #
@@ -1051,7 +1075,19 @@ bool test_load_board_3() {
   #####    #####
 
   */
-  char* expected = "##############\n#            #\n#  ########  #\n#  #      #  #####\n#  ########      #\n#                #\n#      #         #\n#                #\n#   ######   #####\n#   #    #   #\n#   #    #   #\n#####    #####\n";
+  char* expected =
+    "##############\n"
+    "#            #\n"
+    "#  ########  #\n"
+    "#  #      #  #####\n"
+    "#  ########      #\n"
+    "#                #\n"
+    "#      #         #\n"
+    "#                #\n"
+    "#   ######   #####\n"
+    "#   #    #   #\n"
+    "#   #    #   #\n"
+    "#####    #####\n";
   return assert_load_equals("tests/13-sus-in.snk", expected);
 }
 

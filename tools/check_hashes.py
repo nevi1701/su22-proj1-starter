@@ -8,7 +8,7 @@ proj_dir_path = Path(__file__).parent.parent
 starter_file_hashes = {
     "asserts.c": "23a6ef1192c3fae7b65f00dad0b777e4",
     "asserts.h": "3e1a7e65090c03fe9d145ad0a168feeb",
-    "unit_tests.c": "90ae4b5641b3fe5657d4c9e40431ccb4",
+    "unit_tests.c": "29774703b2f20901937c548a941e3f28",
     "tests/01-simple-in.snk": "9300d4767e059a3056a9bf4bd5455b20",
     "tests/01-simple-ref.snk": "7d1aa30890d6d7f38b4c8fe864680532",
     "tests/02-direction-in.snk": "6d3d008aae31e41adf17c715564a5c5f",
