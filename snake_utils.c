@@ -18,14 +18,21 @@ unsigned int det_rand(unsigned int* state) {
 
 unsigned int seed = 1;
 
+unsigned int get_num_cols(game_state_t* state, unsigned int row) {
+  unsigned int num_cols = (unsigned int) strlen(state->board[row]);
+  while (num_cols > 0 && state->board[row][num_cols - 1] == '\n') {
+    num_cols--;
+  }
+  return num_cols;
+}
+
 int deterministic_food(game_state_t* state) {
   unsigned int y = det_rand(&seed) % state->num_rows;
-  unsigned int x = det_rand(&seed) % (unsigned int) strlen(state->board[y]);
+  unsigned int x = det_rand(&seed) % get_num_cols(state, y);
 
-  printf("%x %x\n", x, y);
   while (state->board[y][x] != ' ') {
     y = det_rand(&seed) % state->num_rows;
-    x = det_rand(&seed) % (unsigned int) strlen(state->board[y]);
+    x = det_rand(&seed) % get_num_cols(state, y);
   }
   state->board[y][x] = '*';
 
