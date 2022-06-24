@@ -108,7 +108,7 @@ bool assert_load_equals(char* filename, char* expected) {
     }
   }
 
-  if (!assert_equals_unsigned_int("board height", state->num_rows, expectedLines)) {
+  if (!assert_equals_unsigned_int("board height", expectedLines, state->num_rows)) {
     return false;
   }
 
