@@ -78,7 +78,7 @@ static bool is_tail(char c) {
 
 /*
   Returns true if c is part of the snake's head.
-  The snake consists of these characters: "WASD"
+  The snake consists of these characters: "WASDx"
   Returns false otherwise.
 */
 static bool is_head(char c) {
@@ -88,7 +88,7 @@ static bool is_head(char c) {
 
 /*
   Returns true if c is part of the snake.
-  The snake consists of these characters: "wasd^<>v"
+  The snake consists of these characters: "wasd^<>vWASDx"
 */
 static bool is_snake(char c) {
   // TODO: Implement this function.
