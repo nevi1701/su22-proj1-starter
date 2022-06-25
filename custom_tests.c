@@ -107,12 +107,22 @@ bool test_is_tail() {
   return false;
 }
 
+bool test_is_head() {
+  // TODO: Implement this function.
+  return false;
+}
+
 bool test_is_snake() {
   // TODO: Implement this function.
   return false;
 }
 
 bool test_body_to_tail() {
+  // TODO: Implement this function.
+  return false;
+}
+
+bool test_head_to_body() {
   // TODO: Implement this function.
   return false;
 }
@@ -140,12 +150,20 @@ bool test_customs() {
     printf("%s\n", "test_is_tail failed");
     return false;
   }
+  if (!test_is_head()) {
+    printf("%s\n", "test_is_head failed");
+    return false;
+  }
   if (!test_is_snake()) {
     printf("%s\n", "test_is_snake failed");
     return false;
   }
   if (!test_body_to_tail()) {
     printf("%s\n", "test_body_to_tail failed");
+    return false;
+  }
+  if (!test_head_to_body()) {
+    printf("%s\n", "test_head_to_body failed");
     return false;
   }
   if (!test_get_next_x()) {

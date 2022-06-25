@@ -8,8 +8,10 @@
 /* Helper function definitions */
 static void set_board_at(game_state_t* state, unsigned int x, unsigned int y, char ch);
 static bool is_tail(char c);
+static bool is_head(char c);
 static bool is_snake(char c);
 static char body_to_tail(char c);
+static char head_to_body(char c);
 static unsigned int get_next_x(unsigned int cur_x, char c);
 static unsigned int get_next_y(unsigned int cur_y, char c);
 static void find_head(game_state_t* state, unsigned int snum);
