@@ -100,7 +100,7 @@ bool test_is_vowel() {
   return true;
 }
 
-/* Task INSERT TASK NUMBER */
+/* Task 4.1 */
 
 bool test_is_tail() {
   // TODO: Implement this function.
