@@ -10,7 +10,7 @@ starter_file_hashes = {
     "asserts.h": "3e1a7e65090c03fe9d145ad0a168feeb",
     "snake_utils.c": "b628dc1fd6c8908aa123df38a65c0d21",
     "snake_utils.h": "afd91a278c87e5df3f15dc2baffb3abf",
-    "unit_tests.c": "29774703b2f20901937c548a941e3f28",
+    "unit_tests.c": "6dbcbd1cd5ecfbc292c7b6ecc66bb573",
     "tests/01-simple-in.snk": "9300d4767e059a3056a9bf4bd5455b20",
     "tests/01-simple-ref.snk": "7d1aa30890d6d7f38b4c8fe864680532",
     "tests/02-direction-in.snk": "6d3d008aae31e41adf17c715564a5c5f",

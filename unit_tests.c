@@ -1213,6 +1213,7 @@ bool test_find_head_board_2() {
   tmp->tail_y = 3;
   tmp->head_x = 4;
   tmp->head_y = 3;
+  tmp->live = true;
   expected->num_snakes = 2;
   save_board(expected, "unit-test-out.snk");
 
@@ -1233,6 +1234,7 @@ bool test_find_head_board_2() {
   tmp++;
   tmp->tail_x = 2;
   tmp->tail_y = 3;
+  tmp->live = true;
   actual->num_snakes = 2;
 
   find_head(actual, 1);
