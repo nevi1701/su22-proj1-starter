@@ -400,13 +400,13 @@ static void find_head(game_state_t *state, unsigned int snum) {
 game_state_t *initialize_snakes(game_state_t *state) {
     // TODO: Implement this function.
     state->snakes = malloc(sizeof(snake_t));
-    for (unsigned int i = 0; i < state->num_rows; i++) {
-        for (unsigned int j = 0; j < strlen(state->board[i]); j++) {
-            if (is_tail(get_board_at(state, j, i))) {
+    for (unsigned int y = 0; y < state->num_rows; y++) {
+        for (unsigned int x = 0; x < strlen(state->board[y]); x++) {
+            if (is_tail(get_board_at(state, x, y))) {
                 state->snakes = realloc(state->snakes, (state->num_snakes + 1) *
                                                            sizeof(snake_t));
-                state->snakes[state->num_snakes].tail_x = j;
-                state->snakes[state->num_snakes].tail_y = i;
+                state->snakes[state->num_snakes].tail_x = x;
+                state->snakes[state->num_snakes].tail_y = y;
                 state->snakes[state->num_snakes].live = true;
                 find_head(state, state->num_snakes);
                 state->num_snakes++;
